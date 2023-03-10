@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h2>Add User</h2>
+                <form onsubmit="return false">
+                    <label>User Name</label>
+                    <input type="text" id="UserName">
+                    <label>Age</label>
+                    <input type="number" max="100" min="0" id="Age">
+                    <label>Gander</label>
+                    <br>
+                    <input type="radio" name="gander" data-val="true" checked id="Male"> 
+                    <label for="">Male</label>
+                    <input type="radio" name="gander"  data-val="true"  id="Famale">
+                    <label for="">Famale</label>
+                    <br>
+                    <label>Licance</label>
+                    <input type="checkbox" id="Licance"  data-val="true" >
+                    <button id="AddUser" onclick="addUser()">Add User</button>
+                </form>
+            </div>
+            <div class="col-4">
+                <h2>Add Car</h2>
+                <label>Car Brand</label>
+                <input type="text" id="Brand">
+                <label>Car Color</label>
+                <input type="text" id="Color">
+                <label>Price</label>
+                <input type="text" id="Price">
+                <button id="AddCar" onclick="addCar()">Add Car</button>
+            </div>
+            <div class="col-4">
+                <h2>Rent A Car</h2>
+                <form onsubmit="return false">
+                    
+                <label>User</label>
+                <select id="SelectUser">
+                    <option value="UserId">UserName</option>
+                </select>
+                <label>Car</label>
+                <select id="SelectCar">
+                    <option value="CarId">CarName</option>
+                </select>
+                <label>Rent Day</label>
+               <input type="number" min="1" value="1" id="RentDay">
+               <button id="RentACar" onclick="addRent()">Rent A Car</button>
+               
+            </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                <h2>User List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>User Name</th>
+                            <th>Age</th>
+                            <th>Gander</th>
+                            <th>Licance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="UserList">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-3">
+                <h2>Car List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Car Brand</th>
+                            <th>Color</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="CarList">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-3">
+                <h2>Rent List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>UserId</th>
+                            <th>CarId</th>
+                            <th>Day</th>
+                            <th>Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="RentList">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

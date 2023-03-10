@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js ilk ders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script>
+        //function yaz() {
+
+            //alert('Merhaba JavaS')
+            //
+            /*  Değişkenler
+            3 tür değişken vardır.
+
+            var : globaldir. ancak sonra değiştirilebilir.
+            let : 
+            const : bir kez tanımlanır. globaldir değişmez.
+
+            */
+          
+            
+        //} 
+       /* var kelime = 'Erhan Kaya';//string
+           var kelime1 = 'c';//char
+           var kelime2 = 5 ;//int/number)
+           var kelime3 = 5.4 ;//decimal
+           var kelime4 = true; //boolean
+
+           var deger = '15 + 3 *8/2';
+           alert(eval(deger))
+           */
+
+           function hesapla(){
+            var sayı1 = 5;
+            var sayı2 = 8;
+            alert(sayı1 + sayı2);
+           }
+           function hesapla2(){
+        
+            var sayı1=8;
+            var sayı2=18;
+            var sonuc= sayı1 + sayı2;
+            alert("sonuc :" + sonuc)
+            alert("sonuc :" + sayı1 + sayı2)
+            alert("sonuc :" + (sayı1 + sayı2))
+           }
+           function hesapla3(){
+        
+            var sayı1=8;
+            var sayı2=18;
+            var sonuc= sayı1 + sayı2;
+            
+            alert("sonuc :" + sayı1 + sayı2)
+          
+           }
+           function hesapla4(){
+        
+            var sayı1=8;
+            var sayı2=18;
+            var sonuc= sayı1 + sayı2;
+           
+            alert("sonuc :" + (sayı1 + sayı2))
+           }
+           function yazıyaz(){
+            document.getElementById("yazi").innerText += " Merhaba Dünya " + ' '
+           }
+           function psayiHesapla(){
+            var pSayi = document.getElementById("sayi").innerText
+            var sayi = 5;
+            alert("Sonuç " + (Number(pSayi) + sayi))
+           }
+    </script>
+</head>
+<body>
+    <!-- <button class="btn btn-primary" onclick="alert('Merhaba Dünya')">Tıkla</button>
+    <button class="btn btn-primary" onmouseover="alert('javascript dersi')">JS</button>
+    <button class="btn btn-primary" onmouseleave="alert('javascript dersi bitti')">Ders Bitti</button>
+    <button class="btn btn-primary" onclick="yaz()">YAZ</button>
+    <button class="btn btn-primary" onclick="yaz2()">İkinci Defa Yaz</button>
+    <input type="text" onpointerleave="alert('out')">
+    -->
+
+    <button class="btn btn-secondary" onclick="hesapla()">hesapla</button>
+    <button class="btn btn-secondary" onclick="hesapla2()">hesapla2</button>
+    <button class="btn btn-secondary" onclick="hesapla3()">hesapla3</button>
+    <button class="btn btn-secondary" onclick="hesapla4()">hesapla4</button>
+    <p id="yazi"></p>
+    
+    <button class="btn btn-secondary" onclick="document.getElementById('yazi').innerText+='Merhaba Javascript ' + ' '">Yazı Ekle</button>
+    <button class="btn btn-secondary" onclick="yazıyaz()">Yazı Ekle</button>
+    <hr>
+    <p id="sayi">18</p>
+    <button class="btn btn-danger" onclick="psayiHesapla()">Hesapla</button>
+
+
+
+    
+
+
+<script>
+    function yaz2(){
+alert('Merhaba')
+    }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> 
+</body>
+</html>
